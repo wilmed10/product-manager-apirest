@@ -1,0 +1,47 @@
+npm i -D typescript ts-node     // interprete y version de node para ts
+npx ts-node src/index.ts        // npx (global) para poder correr ts
+npm i -D nodemon                // recarga auto actulizaciones del codigo
+    scripts/dev: "nodemon --exec ts-node src/index.ts"
+
+// compilacion ts
+npx tsc src/index.ts            // typescript compiler
+tsconfig.json                   // archivo con reglas
+npx tsc                         // si tenemos configurado el tsconfig.json
+
+npm i express
+npm i -D @types/express
+
+definir servidor donde alojara la database: Render, Elephant...
+
+npm install --save sequelize    //instalar en el proyecto
+npm install --save pg pg-hstore //instalar para la base de datos
+
+npm i dotenv                    //para asignar el link de conexion de la DB a una key
+
+DBeaver                         //para visualizar datos, tablas de la DB en Windows
+TablePlus                       //para visualizar datos, tablas de la DB en MAC
+
+npm i sequelize-typescript      //para tener soporte de typescript en Sequelize
+
+npm i express-validator         //evitar entrada de datos vacios
+
+npm install --save-dev @types/express //compatibilidad de express con typescript
+
+
+// TESTING (SuperTest y Jest)
+
+npm i -D supertest @types/supertest jest @types/jest ts-jest    // instalacion
+
+npx ts-jest config:init         //crear archivo Jest.config.js
+
+Jest puede leer archivos de 3 formas:
+    .test.js file
+    .spec-js file
+    __test__ folder
+
+Coverage:
+    -%Lines: Cobertura de lineas
+    -%Stmts: Cobertura de instrucciones individuales
+    -%Branch: if, switchs.. fueron evaluadas en sus dos estados (true&false)
+
+Mocks: tecnica para simular el comportamiento de ciertos modulos, func, obj en las pruebas
