@@ -45,3 +45,9 @@ Coverage:
     -%Branch: if, switchs.. fueron evaluadas en sus dos estados (true&false)
 
 Mocks: tecnica para simular el comportamiento de ciertos modulos, func, obj en las pruebas
+
+Documentar API con swagger
+
+npm i swagger-jsdoc swagger-ui-express      // con el formato YAML poder crear documentacion | tener url con la documentacion
+npm i -D @types/swagger-jsdoc @types/swagger-ui-express
+
